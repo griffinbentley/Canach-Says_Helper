@@ -1,9 +1,10 @@
-input_tiles = [2, 1, 1, 0, 2, 1, 2]
+from screenshot import Screenshot
 
 # memory mechanism
 tiles = []
 for i in range(7):
-    tiles.append(input_tiles[i])
+    # get tile from screenshot
+    tiles.append(Screenshot())
     for j in range(i+1):
         if j != i:
             print(tiles[j], end=',')
